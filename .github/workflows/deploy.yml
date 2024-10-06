@@ -25,9 +25,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
+
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./personal-app
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,9 +42,9 @@ jobs:
           node-version: "latest"
 
       - name: Install dependencies
-        run: npm install -g pnpm
-        run: cd personal-app
-        run: pnpm i
+        run: |
+          npm install -g pnpm
+          pnpm i
 
       - name: Build
         run: pnpm next build
