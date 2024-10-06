@@ -1,10 +1,11 @@
 import localFont from "next/font/local";
-import {Roboto} from "next/font/google";
 
-export const roboto = Roboto({
-    weight: ["400","700"],
-    style: ["normal"],
-    subsets: ["latin"]
+export const roboto = localFont({
+    src: "./fonts/Roboto-Regular.ttf"
+})
+
+export const robotoBold = localFont({
+    src: "./fonts/Roboto-Bold.ttf"
 })
 
 export const pathwayGothic = localFont({
