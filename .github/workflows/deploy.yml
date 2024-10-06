@@ -46,6 +46,11 @@ jobs:
           npm install -g pnpm
           pnpm i
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+
       - name: Build
         run: pnpm next build
 
