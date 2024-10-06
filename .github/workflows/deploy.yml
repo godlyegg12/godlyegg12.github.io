@@ -38,6 +38,8 @@ jobs:
           node-version: "latest"
 
       - name: Install dependencies
+        run: npm install -g pnpm
+        run: cd personal-app
         run: pnpm i
 
       - name: Build
