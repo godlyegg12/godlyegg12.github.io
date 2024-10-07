@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row px-[100px] pt-[16px]">
             <div className="rounded-[50%] overflow-hidden mr-[16px] w-[160px] h-[160px]">
-              <Image src="/channel_image.jpg" width={160} height={160} alt="Channel Picture"/>
+              <Image src="/channel_profile.jpg" width={160} height={160} alt="Channel Picture"/>
             </div>
             <div>
               <div className="flex flex-col">
