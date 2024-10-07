@@ -1,4 +1,4 @@
-import {pathwayGothic} from "@/app/fonts";
+import {pathwayGothic, roboto} from "@/app/fonts";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,6 +32,28 @@ export default function Home() {
           <div className="px-[100px]">
             <div className="rounded-[16px] overflow-hidden">
               <Image src="/example_banner.png" width={1707} height={284} alt="Banner"/>
+            </div>
+          </div>
+          <div className="flex flex-row px-[100px] pt-[16px]">
+            <div className="rounded-[50%] overflow-hidden mr-[16px] w-[160px] h-[160px]">
+              <Image src="/channel_image.jpg" width={160} height={160} alt="Channel Picture"/>
+            </div>
+            <div>
+              <div className="flex flex-col">
+                <div className="flex flex-row">
+                  <h1 className="flex text-[36px]/[50px] ${roboto.className} font-bold">
+                    Aidan Griffith
+                  </h1>
+                  <div className="flex ml-[8px] items-center">
+                    <div className="w-[14px] h-[14px]">
+                      <Image src="/Verified_Checkmark.png" width={14} height={14} alt=""/>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-[#aaa]">
+                  godlyegg12@gmail.com • 420k subscribers • No projects
+                </div>
+              </div>
             </div>
           </div>
         </div>
