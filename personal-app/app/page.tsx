@@ -23,8 +23,6 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-col">
-        <div className="fixed left-0 bottom-0 top-[60px] w-[72px]">
-        </div>
         <div className="flex flex-col p-[16px] sm:p-0">
           <div className="sm:px-[100px] mb-[16px]">
             <div className="rounded-[8px] sm:rounded-[16px] overflow-hidden">
