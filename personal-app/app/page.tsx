@@ -11,13 +11,13 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-row grow justify-start align-middle items-center">
-          <div className="flex px-[14px] ${pathwayGothic.className}">
+          <div className="flex px-[14px] ${pathwayGothic.className} pointer-events-none">
             <div className="w-[36px] h-[25px]">
               <Image src="/Mytube_logo.png" width={640} height={443} alt="MyTube Logo"/>
             </div>
-            <p className="text-[30px] font-medium tracking-[-0.08em] leading-[25px]">
+            <div className="text-[30px] font-medium tracking-[-0.08em] leading-[25px]">
               MyTube
-            </p>
+            </div>
           </div>
         </div>
       </header>
@@ -39,12 +39,12 @@ export default function Home() {
             <div>
               <div className="flex flex-col">
                 <div className="flex flex-row">
-                  <h1 className="flex text-[24px]/[32px] sm:text-[36px]/[50px] ${roboto.className} font-bold">
+                  <div className="flex text-[24px]/[32px] sm:text-[36px]/[50px] ${roboto.className} font-bold">
                     Aidan Griffith
-                  </h1>
+                  </div>
                   <div className="flex ml-[8px] items-center">
-                    <div className="w-[14px] h-[14px]">
-                      <Image src="/Verified_Checkmark.png" width={14} height={14} alt=""/>
+                    <div className="w-[14px] h-[14px] pointer-events-none">
+                      <Image src="/Verified_Checkmark.png" width={24} height={24} alt=""/>
                     </div>
                   </div>
                 </div>
@@ -63,9 +63,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-
+        <div className="flex flex-row mt-[10px] px-[16px] sm:px-[100px] h-[48px] ${roboto.className} font-medium text-[20px]/[22px] text-[#aaa] underline-offset-[16px]">
+          <button className="flex mr-[24px] items-center hover:underline active:text-[#fff]">
+            Home
+          </button>
+          <button className="flex mr-[24px] items-center hover:underline active:text-[#fff]">
+            Projects
+          </button>
+          <button className="flex mr-[24px] items-center hover:underline active:text-[#fff]">
+            About
+          </button>
         </div>
+        <div className="flex border-b-[1px] sm:mx-[25px] border-[#fff]/[0.2]"></div>
       </main>
     </div>
   );
